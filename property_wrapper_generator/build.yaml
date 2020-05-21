@@ -1,0 +1,15 @@
+targets:
+  $default:
+    builders:
+      property_wrapper_generator|property_wrapper:
+        enabled: true
+
+builders:
+  property_wrapper:
+    target: ":property_wrapper_generator"
+    import: "package:property_wrapper_generator/builder.dart"
+    builder_factories: ["propertyWrapper"]
+    build_extensions: {".dart": [".property_wrapper.g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]

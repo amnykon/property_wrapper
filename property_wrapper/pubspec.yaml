@@ -1,0 +1,11 @@
+name: property_wrapper
+description: Autogenerate code when a global or class variable of a property wrapper type is declared.
+version: 0.0.1
+author:
+homepage:
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  pedantic: ^1.9.0
