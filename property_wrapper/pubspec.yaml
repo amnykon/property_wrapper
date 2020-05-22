@@ -1,8 +1,7 @@
 name: property_wrapper
 description: Autogenerate code when a global or class variable of a property wrapper type is declared.
-version: 0.0.1
-author:
-homepage:
+version: 0.0.2
+homepage: https://github.com/amnykon/property_wrapper
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
